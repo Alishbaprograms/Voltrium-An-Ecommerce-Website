@@ -18,8 +18,8 @@ export const Navbar = () => {
         <ul className="nav-menu">
             <li onClick ={()=>{setMenu("shop")}}><Link to='/'>Shop</Link>{menu==="shop" ? <hr/>: <></>}</li>
             <li onClick ={()=>{setMenu("arduino")}}> <Link to='/arduino'>Arduino</Link>{menu==="arduino" ? <hr/>: <></>}</li>
-            <li onClick ={()=>{setMenu("supplier")}}><Link to='/suppliers'>Suppliers</Link> {menu==="supplier" ? <hr/>: <></>} </li>
-            <li onClick ={()=>{setMenu("component")}}><Link to='/components'>Components</Link> {menu==="component" ? <hr/>: <></>} </li>
+            <li onClick ={()=>{setMenu("suppliers")}}><Link to='/suppliers'>Suppliers</Link> {menu==="suppliers" ? <hr/>: <></>} </li>
+            <li onClick ={()=>{setMenu("components")}}><Link to='/components'>Components</Link> {menu==="components" ? <hr/>: <></>} </li>
         </ul>
         <div className="nav-login-cart">
             <button>Login</button>

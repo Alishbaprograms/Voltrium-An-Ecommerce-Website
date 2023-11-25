@@ -18,7 +18,7 @@ function App() {
         <Route path='/' element={<Shop/>}/> 
         <Route path='/arduino' element={<ShopCategory category="arduino"/>}/> 
         <Route path='/suppliers' element={<ShopCategory category="suppliers"/>}/> 
-        <Route path='/componenets' element={<ShopCategory category="componenets"/>}/> 
+        <Route path='/components' element={<ShopCategory category="componenets"/>}/> 
 
         <Route path="product" element={<Product/>}>
           <Route path=":productId" element={<Product/>}/>
