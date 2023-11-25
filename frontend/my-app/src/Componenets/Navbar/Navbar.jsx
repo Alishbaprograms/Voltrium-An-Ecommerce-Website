@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import './Navbar.css'
 import logo from '../Assets/logo.png'
 import cart_icon from '../Assets/cart_icon.png'
+import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
 
@@ -15,10 +16,10 @@ export const Navbar = () => {
             <p>Voltrium</p>
         </div>
         <ul className="nav-menu">
-            <li onClick ={()=>{setMenu("shop")}} > Shop{menu==="shop" ? <hr/>: <></>}</li>
-            <li onClick ={()=>{setMenu("arduino")}}>Arduino {menu==="arduino" ? <hr/>: <></>}</li>
-            <li onClick ={()=>{setMenu("supplier")}}>Suppliers {menu==="supplier" ? <hr/>: <></>} </li>
-            <li onClick ={()=>{setMenu("component")}}> Component {menu==="component" ? <hr/>: <></>} </li>
+            <li onClick ={()=>{setMenu("shop")}}><Link to='/'>Shop</Link>{menu==="shop" ? <hr/>: <></>}</li>
+            <li onClick ={()=>{setMenu("arduino")}}> <Link to='/arduino'>Arduino</Link>{menu==="arduino" ? <hr/>: <></>}</li>
+            <li onClick ={()=>{setMenu("supplier")}}><Link to='/suppliers'>Suppliers</Link> {menu==="supplier" ? <hr/>: <></>} </li>
+            <li onClick ={()=>{setMenu("component")}}><Link to='/components'>Components</Link> {menu==="component" ? <hr/>: <></>} </li>
         </ul>
         <div className="nav-login-cart">
             <button>Login</button>
