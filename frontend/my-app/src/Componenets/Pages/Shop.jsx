@@ -10,7 +10,7 @@ const Shop = () => {
         <Popular/>
         <div>
           abc
-        </div>
+    </div>
     </div>
   )
 }
