@@ -15,7 +15,7 @@ const Hero = () => {
             <div>
                 <div className="hero-hand-icon">
                     <p>new</p>
-                    <img src={hand_icon} alt='x' style={{ width: '130px', height: '130px' }} />
+                    <img src={hand_icon} alt='x' style={{ width: '75px', height: '75px' }} />
 
                 </div>
                 <p>components</p>
@@ -23,14 +23,14 @@ const Hero = () => {
             </div>
             <div className="hero-lastest-btn">
 
-            <div>Latest Collection</div>
+            <div class="hero-btn-text">Latest Collection</div>
             <img src={arrow_icon} alt="" />
             </div>
 
         </div>
 
         <div className="hero-right">
-        <img src={hero_image} alt=""  style={{ width: '650px', height: '650px' }}/>
+        <img src={hero_image} alt=""  style={{ width: '600px', height: '600px' }}/>
         </div>
     </div>
   )
