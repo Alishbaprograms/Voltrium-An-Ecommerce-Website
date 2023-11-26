@@ -1,2 +1,2 @@
 # Voltrium-An-Ecommerce-Website
-Front end
+A fully developed website for my database management project
